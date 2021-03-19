@@ -77,14 +77,7 @@ ul, li {
 	width: 100%;
 }
 nav {
-	width: 60px;
-	height: 60px;
-	background-image: url(../img/icon-navi.svg);
-	background-size: cover;
-	position: absolute;
-	top: 50%;
-	right: 55px;
-	transform: translate(0, -50%);
+	height: 100%;
 }
 @media screen and (max-width: 679px) {
 	.top-header {
