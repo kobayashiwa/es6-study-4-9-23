@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>es6-study-4-8-21</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <header class="top-header">
+            <div class="head-logo"><img src="./img/logo.svg" alt="茶ッカソン"></div>
+            <nav></nav>
+        </header>
+
+        <main>
+            <section class="HomeHero">section / HomeHero</section>
+            <section class="HomeAbout">section / HomeAbout</section>
+            <section class="HomeReport">section / HomeReport</section>
+            <section class="HomeNorenwake">section / HomeNorenwake</section>
+        </main>
+
+        <footer>footer</footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        // スクロール時に実行する
+        $(window).scroll(function(){
+            // top-headerの高さを取得する
+            let mainVisualHeight = $(".top-header").height();
+            // スクロール量の取得
+            let scroll = $(this).scrollTop();
+            // スクロール量がtop-headerの高さより大きければclassを付与する
+            if ( scroll > mainVisualHeight){
+                $(".top-header").addClass("bisible");
+            }
+            // スクロール量がtop-headerの高さより小さければ特定のclassを消す
+            else {
+                $(".top-header").removeClass("bisible");
+            }
+        });
+    </script>
+
+    <script>
+        class Animal {
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            greet(){
+                console.log("こんにちは");
+            }
+            info() {
+                console.log(`名前は${animal.name}です`);
+                console.log(`年齢は${animal.age}歳です`);
+            }
+        }
+        const animal = new Animal("レオ", 3);
+        animal.greet();
+        animal.info();
+
+        class Sendenkaigi {
+            constructor(media,num) {
+                this.media = media;
+                this.num = num;
+            }
+            info() {
+                console.log(`現在運営するメディアは${sendenkaigi.media}の${sendenkaigi.num}媒体となります。`);
+            }
+        }
+        const sendenkaigi = new Sendenkaigi("宣伝会議・販促会議・広報会議・ブレーン", 4);
+        sendenkaigi.info();
+
+        class Hansokukaigi {
+            constructor(site,description){
+                this.site = site;
+                this.description = description;
+            }
+            info() {
+                console.log(`${hansokukaigi.site}は${hansokukaigi.description}です`);
+            }
+        }
+        const hansokukaigi = new Hansokukaigi("販促会議", "販売促進の専門メディア");
+        hansokukaigi.info();
+
+        class Nav {
+            constructor(about,apply,search,login) {
+                this.about = about;
+                this.apply = apply;
+                this.search = search;
+                this.login = login;
+            }
+            info() {
+                console.log(`${nav.about}`);
+                console.log(`${nav.apply}`);
+                console.log(`${nav.search}`);
+                console.log(`${nav.login}`);
+            }
+        }
+        const nav = new Nav("デジタルマガジンとは", "申し込む", "記事内検索", "ログイン");
+        nav.info();
+
+        class Heading {
+            constructor(year,month,site,tag,title,name,company) {
+                this.year = year;
+                this.month = month;
+                this.site = site;
+                this.tag = tag;
+                this.title = title;
+                this.name = name;
+                this.company = company;
+            }
+            info() {
+                console.log(`${heading.year}年${heading.month}月号 ${heading.site}`);
+                console.log(`${heading.tag}`);
+                console.log(`${heading.title}`);
+                console.log(`${heading.name} ${heading.company}`);
+            }
+        }
+        const heading = new Heading(2021, 4, "販促会議", "アクティベーションツール", "伝統と革新を感じる、手土産にしたいパッケージ", "小川裕子", "小川裕子デザイン");
+        heading.info();
+
+        class Social {
+            constructor(facebook,twitter,bookmark) {
+                this.facebook = facebook;
+                this.twitter = twitter;
+                this.bookmark = bookmark;
+            }
+            info() {
+                console.log(`${social.facebook}`);
+                console.log(`${social.twitter}`);
+                console.log(`${social.bookmark}`);
+            }
+        }
+        const social = new Social("いいね！", "ツイート", "Bookmark");
+        social.info();
+
+        class Temiyage {
+            constructor(item,lang,design) {
+                this.item = item;
+                this.lang = lang;
+                this.design = design;
+            }
+            info() {
+                console.log(`「${temiyage.item}」という美しい${temiyage.lang}があるが、これは選ぶ側もいただく側もが幸せな気分になれてこそ美しい${temiyage.design}なのだと感じる。`);
+            }
+        }
+        const temiyage = new Temiyage("手土産", "日本語", "パッケージデザイン");
+        temiyage.info();
+
+        class Sweets {
+            constructor(item,wrap,bland) {
+                this.item = item;
+                this.wrap = wrap;
+                this.bland = bland;
+            }
+            info() {
+                console.log(`中でも${sweets.item}の${sweets.wrap}は山ほどあるが、最高峰のひとつではないかといえるのが「${sweets.bland}」の洋菓子${sweets.wrap}デザイン群ではないだろうか。`);
+            }
+        }
+        const sweets = new Sweets("お菓子", "パッケージ", "資生堂パーラー");
+        sweets.info();
+
+        class Renewal {
+            constructor(year,add,taste) {
+                this.year = year;
+                this.add = add;
+                this.taste = taste;
+            }
+            info() {
+                console.log(`${renewal.year}年に${renewal.add}されているが、${renewal.taste}を感じつつもどこか革新的でいて斬新である。`);
+            }
+        }
+        const renewal = new Renewal(2015, "リニューアル", "伝統");
+        renewal.info();
+    </script>
+
+</html>
