@@ -68,8 +68,8 @@ ul, li {
 	position: absolute;
 	width: 46px;
 	height: 52px;
-	top: 40px;
-	left: 45px;
+	top: 50%;
+	left: 0;
 }
 .head-logo img {
 	width: 100%;
