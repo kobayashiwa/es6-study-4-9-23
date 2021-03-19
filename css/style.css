@@ -83,7 +83,7 @@ nav ul {
 	justify-content: flex-end;
 }
 nav ul li {
-	
+	padding: 0 20px;
 }
 @media screen and (max-width: 679px) {
 	.top-header {
