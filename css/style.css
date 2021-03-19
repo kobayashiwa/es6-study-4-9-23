@@ -70,6 +70,7 @@ ul, li {
 	height: 52px;
 	top: 50%;
 	left: 0;
+	transform: translate(0, -50%);
 }
 .head-logo img {
 	width: 100%;
