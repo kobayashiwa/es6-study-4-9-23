@@ -79,8 +79,7 @@ nav {
 	height: 100%;
 	padding-right: 80px;
 }
-nav ul {
-	text-align: right;
+nav ul li {
 }
 @media screen and (max-width: 679px) {
 	.top-header {
