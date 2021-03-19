@@ -55,6 +55,11 @@ ul, li {
 	background: rgb(0, 0, 0, 0.4);
 	/** display: none; **/
 }
+.in {
+	height: 100%;
+	width: 100%;
+	background: #555;
+}
 .top-header.bisible {
 	display: block;
 }
