@@ -194,6 +194,12 @@ nav ul li a.active {
 	transform: translateY(0%);
   }
 @media screen and (max-width: 375px) {
+	.top-header {
+		position: relative;
+		height: 130px;
+		padding: 0 60px;
+		background: #777;
+	}
 }
 
 /** main **/
