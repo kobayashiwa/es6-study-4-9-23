@@ -112,6 +112,12 @@ nav ul li a.active {
 	height: 4px;
 	background: #fff;
 }
+.toggle::before, .toggle::after, .toggle span {
+	content: '';
+}
+.toggle-menu {
+	position: fixed;
+}
 @media screen and (max-width: 679px) {
 }
 
