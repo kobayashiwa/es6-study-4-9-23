@@ -173,6 +173,7 @@ nav ul li a.active {
 	width: 100%;
 	transform: translateX(100%);
 	transition: all 1s;
+	background: rgba(0, 0, 0, 0.6);
 }
 .active {
 	transform: translateX(0%);
