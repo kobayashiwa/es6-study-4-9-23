@@ -88,6 +88,10 @@ nav ul li {
 	padding: 0 20px;
 	
 }
+nav ul li a {
+	color: #fff;
+	
+}
 @media screen and (max-width: 679px) {
 	.top-header {
 		height: 92px;
