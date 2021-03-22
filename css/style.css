@@ -66,6 +66,9 @@ ul, li {
 	left: 0;
 	transform: translate(0, -50%);
 }
+.smartphone {
+	display: none;
+}
 .head-logo img {
 	width: 100%;
 }
@@ -198,7 +201,13 @@ nav ul li a.active {
 		position: relative;
 		height: 130px;
 		padding: 0 60px;
-		background: #777;
+		background: #fff;
+	}
+	.desktop {
+		display: none;
+	}
+	.smartphone {
+		display: block;
 	}
 }
 
