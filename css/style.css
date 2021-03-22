@@ -104,7 +104,12 @@ nav ul li a.active {
   z-index: 3;
 }
 .toggle.bisible {
-	background: #666;
+	background: #f3f3f3;
+}
+.toggle.bisible::before,
+.toggle.bisible::after,
+.toggle.bisible span {
+  background: #6a6b75;
 }
 .toggle:focus:not(:focus-visible) {
   outline: none;
