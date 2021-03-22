@@ -105,6 +105,7 @@ nav ul li a.active {
 	top: 25px;
 	right: 50px;
 	background: #444;
+	cursor: pointer;
 }
 @media screen and (max-width: 679px) {
 }
