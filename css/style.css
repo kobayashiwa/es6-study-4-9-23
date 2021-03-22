@@ -107,6 +107,7 @@ nav ul li a.active {
   height: 60px;
   background: #000;
   cursor: pointer;
+  z-index: 3;
 }
 .toggle:focus:not(:focus-visible) {
   outline: none;
@@ -171,9 +172,11 @@ nav ul li a.active {
 	right: 0;
 	text-align: center;
 	width: 100%;
+	height: 100vh;
 	transform: translateX(100%);
 	transition: all 1s;
 	background: rgba(0, 0, 0, 0.6);
+	z-index: 2;
 }
 .active {
 	transform: translateX(0%);
