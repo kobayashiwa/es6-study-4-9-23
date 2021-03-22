@@ -177,7 +177,7 @@ nav ul li a.active {
 	height: 100vh;
 	transform: translateY(100%);
 	transition: all 1s;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.8);
 	z-index: 2;
 }
 .toggle-menu ul {
@@ -213,6 +213,18 @@ nav ul li a.active {
 	.smartphone {
 		display: block;
 	}
+	.toggle {
+		top: 10px;
+		right: 10px;
+	  }
+	.toggle::before,
+	.toggle::after,
+	.toggle span {
+		background: #000;
+	}
+	.toggle::before, .toggle::after {
+		background: #fff;
+	  }
 }
 
 /** main **/
