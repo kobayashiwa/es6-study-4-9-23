@@ -137,17 +137,20 @@ nav ul li a.active {
 }
 .toggle span:nth-of-type(1) {
   top: 10px;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   transition-delay: .2s;
 }
 .toggle span:nth-of-type(2) {
   top: 20px;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   transition-delay: .2s;
 }
 .toggle span:nth-of-type(3) {
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   transition-delay: .2s;
 }
 .toggle.active::before {
@@ -167,6 +170,7 @@ nav ul li a.active {
 	top: 0;
 	right: 0;
 	text-align: center;
+	width: 100%;
 }
 @media screen and (max-width: 679px) {
 }
