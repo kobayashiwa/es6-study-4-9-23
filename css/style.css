@@ -96,6 +96,11 @@ nav ul li a.active {
 	color: rgba(255, 255, 255, 1);
 	font-weight: 400;
 }
+.toggle {
+	width: 60px;
+	height: 60px;
+	background: #444;
+}
 @media screen and (max-width: 679px) {
 }
 
