@@ -90,7 +90,11 @@ nav ul li {
 }
 nav ul li a {
 	color: #fff;
-	
+	font-weight: 100;	
+}
+nav ul li a.active {
+	color: #fff;
+	font-weight: 400;
 }
 @media screen and (max-width: 679px) {
 	.top-header {
