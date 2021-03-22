@@ -52,15 +52,11 @@ ul, li {
 	width: 100%;
 	height: 110px;
 	padding: 0 60px;
-	/** display: none; **/
 }
 .in {
 	height: 100%;
 	width: 100%;
 	position: relative;
-}
-.top-header.bisible {
-	/** display: block; **/
 }
 .head-logo {
 	position: absolute;
@@ -106,6 +102,9 @@ nav ul li a.active {
   height: 60px;
   cursor: pointer;
   z-index: 3;
+}
+.toggle.bisible {
+	background: #666;
 }
 .toggle:focus:not(:focus-visible) {
   outline: none;
@@ -189,7 +188,7 @@ nav ul li a.active {
 .active {
 	transform: translateY(0%);
   }
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 375px) {
 }
 
 /** main **/
