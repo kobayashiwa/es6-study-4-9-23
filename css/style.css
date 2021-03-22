@@ -95,30 +95,72 @@ nav ul li a.active {
 	color: rgba(255, 255, 255, 1);
 	font-weight: 400;
 }
-.toggle, .toggle span {
-	display: inline-block;
+.toggle,
+.toggle span {
+  display: inline-block;
 }
 .toggle {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	top: 25px;
-	right: 50px;
-	background: #444;
-	cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background: #555;
+  cursor: pointer;
 }
+.toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+.toggle::before,
+.toggle::after {
+  content: '';
+}
+.toggle::before,
+.toggle::after,
 .toggle span {
-	width: 100%;
-	height: 4px;
-	background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  transform-origin: 50% 50%;
+  transition: .2s;
 }
-.toggle::before, .toggle::after, .toggle span {
-	content: '';
+.toggle::before {
+  top: 20px;
+  left: 0;
+  transform: rotate(45deg) scaleX(0);
 }
-.toggle-menu {
-	position: fixed;
-	top: 0;
-	right: 0;
+.toggle::after {
+  top: 20px;
+  right: 0;
+  transform: rotate(-45deg) scaleX(0);
+}
+.toggle span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  transition-delay: .2s;
+}
+.toggle span:nth-of-type(2) {
+  top: 20px;
+  left: 0;
+  transition-delay: .2s;
+}
+.toggle span:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+  transition-delay: .2s;
+}
+.toggle.active::before {
+  transform: rotate(45deg) scaleX(1);
+  transition-delay: .2s;
+}
+.toggle.active::after {
+  transform: rotate(-45deg) scaleX(1);
+  transition-delay: .2s;
+}
+.toggle.active span {
+  transform: scaleX(0);
+  transition-delay: 0s;
 }
 @media screen and (max-width: 679px) {
 }
