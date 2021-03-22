@@ -136,22 +136,22 @@ nav ul li a.active {
   transform: rotate(-45deg) scaleX(0);
 }
 .toggle span:nth-of-type(1) {
-  top: 10px;
+  top: 24px;
   left: 50%;
   transform: translate(-50%, 0);
   transition-delay: .2s;
 }
 .toggle span:nth-of-type(2) {
-  top: 20px;
+  top: 29px;
   left: 50%;
   transform: translate(-50%, 0);
   transition-delay: .2s;
 }
 .toggle span:nth-of-type(3) {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  transition-delay: .2s;
+	top: 34px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	transition-delay: .2s;
 }
 .toggle.active::before {
   transform: rotate(45deg) scaleX(1);
@@ -171,6 +171,7 @@ nav ul li a.active {
 	right: 0;
 	text-align: center;
 	width: 100%;
+	transform: translateX(-100%);
 }
 @media screen and (max-width: 679px) {
 }
