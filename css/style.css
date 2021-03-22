@@ -106,8 +106,13 @@ main {
 }
 .first-view {
 	width: 100%;
-	height: 20vw;
+	height: 40vw;
 	background: hsl(214, 97%, 23%, 0.1);
+}
+.section-concept {
+	width: 100%;
+	height: 40vw;
+	background: hsl(214, 97%, 23%, 0.2);
 }
 
 /** footer **/
