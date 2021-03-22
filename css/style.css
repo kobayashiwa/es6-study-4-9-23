@@ -224,7 +224,11 @@ nav ul li a.active {
 	}
 	.toggle::before, .toggle::after {
 		background: #fff;
-	  }
+	}
+	.toggle-menu ul li {
+		font-size: 2rem;
+		padding: 1rem 0;
+	}
 }
 
 /** main **/
