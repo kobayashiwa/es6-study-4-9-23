@@ -95,6 +95,9 @@ nav ul li a.active {
 	color: rgba(255, 255, 255, 1);
 	font-weight: 400;
 }
+.toggle, .toggle span {
+	display: inline-block;
+}
 .toggle {
 	position: fixed;
 	width: 60px;
