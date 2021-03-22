@@ -114,6 +114,11 @@ main {
 	height: 40vw;
 	background: hsl(214, 97%, 23%, 0.2);
 }
+.section-products {
+	width: 100%;
+	height: 30vw;
+	background: hsl(214, 97%, 23%, 0.3);
+}
 
 /** footer **/
 footer {
