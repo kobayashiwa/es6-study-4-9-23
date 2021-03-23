@@ -229,6 +229,7 @@ nav ul li a.active {
 	}
 	nav ul li a {
 		color: rgba(0, 0, 0, 0.6);	
+		font-size: 0.9rem;
 	}
 	nav ul li a.active {
 		color: rgba(0, 0, 0, 1);
