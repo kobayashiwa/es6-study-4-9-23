@@ -14,10 +14,11 @@
 
         <header class="top-header">
             <div class="in">
-                <div class="head-logo"><img src="img/logo-white.png" alt="FIL"></div>
+                <div class="head-logo desltop"><img src="img/logo-white.png" alt="FIL"></div>
+                <div class="head-logo smartphone"><img src="img/logo-black.png" alt="FIL"></div>
                 <nav>
                     <ul class="flex">
-                        <li><a href="#">Home</a></li>
+                        <li><a class="active" href="#">Home</a></li>
                         <li><a href="#">Concept</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Store</a></li>
@@ -26,13 +27,27 @@
             </div>
         </header>
 
-        <div class="toggle"></div>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="toggle-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </div>
 
         <main>
-            <section class="HomeHero">section / HomeHero</section>
-            <section class="HomeAbout">section / HomeAbout</section>
-            <section class="HomeReport">section / HomeReport</section>
-            <section class="HomeNorenwake">section / HomeNorenwake</section>
+            <section class="first-view">section / first-view</section>
+            <section class="section-concept">section / section-concept</section>
+            <section class="section-products">section / section-products</section>
+            <section class="slider">section / slider</section>
+            <section class="section-store">section / section-store</section>
+            <section class="section-connected">section / section-connected</section>
         </main>
 
         <footer>footer</footer>
@@ -43,18 +58,32 @@
     <script>
         // スクロール時に実行する
         $(window).scroll(function(){
-            // top-headerの高さを取得する
-            let mainVisualHeight = $(".top-header").height();
+            // first-viewの高さを取得する
+            let mainVisualHeight = $(".first-view").height();
             // スクロール量の取得
             let scroll = $(this).scrollTop();
-            // スクロール量がtop-headerの高さより大きければclassを付与する
+            // スクロール量がfirst-viewの高さより大きければclassを付与する
             if ( scroll > mainVisualHeight){
-                $(".top-header").addClass("bisible");
+                $(".toggle").addClass("bisible");
             }
             // スクロール量がtop-headerの高さより小さければ特定のclassを消す
             else {
-                $(".top-header").removeClass("bisible");
+                $(".toggle").removeClass("bisible");
             }
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $(this).toggleClass('active');
+                
+                if ($(this).hasClass('active')) {
+                    $('.toggle-menu').addClass('active');
+                } else {
+                    $('.toggle-menu').removeClass('active');
+                }
+            });
         });
     </script>
 
