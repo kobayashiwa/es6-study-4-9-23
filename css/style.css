@@ -196,7 +196,7 @@ nav ul li a.active {
 .active {
 	transform: translateY(0%);
   }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 680px) {
 	.top-header {
 		position: relative;
 		height: 130px;
