@@ -216,8 +216,7 @@ nav ul li a.active {
 
 
 	nav {
-		height: 100%;
-		padding-right: 80px;
+		padding-right: 0;
 	}
 	nav ul {
 		justify-content: flex-end;
