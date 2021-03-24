@@ -183,6 +183,20 @@
         }
         const project = new Project("テーマ", "ジェンダー", "ルッキズム", "編集部");
         project.info();
+
+        class Epilogue {
+            constructor(task, status, emotions, pr) {
+                this.task = task;
+                this.status = status;
+                this.emotions = emotions;
+                this.pr = pr;
+            }
+            heading() {
+                console.log(`${this.task}を終えて`);
+            }
+        }
+        const epilogue = new Epilogue("取材", "このまま", "違和感", "プレスリリース");
+        epilogue.heading();
     </script>
 
 </html>
