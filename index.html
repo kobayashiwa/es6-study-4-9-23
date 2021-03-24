@@ -100,6 +100,7 @@
                 this.greet();
                 console.log(`名前は${this.name}です`);
                 console.log(`年齢は${this.age}歳です`);
+                console.log("----------");
             }
         }
         const animal = new Animal("レオ", 3);
@@ -114,9 +115,11 @@
                 console.log(`${this.media}${this.ad}で売上げアップ`);
             }
             info() {
+                this.title();
                 console.log("LEAD TO SUCCESS");
                 console.log(`厳選した${this.ad}メニューで売上創出を支援`);
                 console.log("Marketing Bank");
+                console.log("----------");
             }
         }
         const marketingbank = new Marketingbank("WEB", "広告");
