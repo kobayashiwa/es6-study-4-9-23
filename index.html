@@ -110,8 +110,12 @@
                 this.media = media;
                 this.ad = ad;
             }
+            title() {
+                console.log(`${this.media}${this.ad}で売上げアップ`);
+            }
         }
         const marketingbank = new Marketingbank("WEB", "広告");
+        marketingbank.title();
     </script>
 
 </html>
