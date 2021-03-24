@@ -152,8 +152,12 @@
                 this.position = position;
                 this.view = view;
             }
+            heading() {
+                console.log(`vol.${this.vol}の${this.position}としての${this.view}`);
+            }
         }
         const vision = new Vision(14, "編集長", "今後");
+        vision.heading();
     </script>
 
 </html>
