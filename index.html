@@ -132,7 +132,12 @@
                 this.media = media;
                 this.voice = voice;
             }
+            heading() {
+                console.log(`${this.ad}${this.bisiness}・${this.media}`);
+            }
         }
+        const adbisiness = new Adbisiness("広告", "ビジネス", "メディア", "オワコン");
+        adbisiness.heading();
     </script>
 
 </html>
