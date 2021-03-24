@@ -194,9 +194,14 @@
             heading() {
                 console.log(`${this.task}を終えて`);
             }
+            info() {
+                this.heading();
+                console.log(`「このままでいいのだろうか？」。明確な${this.emotions}を抱いたのは${this.pr}を出すという段階だったというのは、先述の通りです。`);
+                console.log("----------");
+            }
         }
         const epilogue = new Epilogue("取材", "このまま", "違和感", "プレスリリース");
-        epilogue.heading();
+        epilogue.info();
     </script>
 
 </html>
