@@ -202,6 +202,22 @@
         }
         const epilogue = new Epilogue("取材", "このまま", "違和感", "プレスリリース");
         epilogue.info();
+
+        class Advice {
+            constructor(school, active, media, position, teacher) {
+                this.school = school;
+                this.active = active;
+                this.media = media;
+                this.position = position;
+                this.teacher = teacher;
+            }
+            heading() {
+                console.log(`その際、失礼を重々承知の上で${this.school}の${this.active}でお世話になっていました、『${this.media}』${this.position}の${this.teacher}先生に「課題意識が面白く、大学生がこれに取り組んでいる過程を公にする価値が十分にあると思う」と温かいお言葉をいただき、${this.active}内で自身が抱えていた葛藤と課題についての取り組みを企画として提出するに至りました。`);
+            }
+        }
+        const advice = new Advice("東京大学情報学環", "講義", "宣伝会議", "編集長", "谷口優");
+        advice.heading();
     </script>
 
 </html>
+
