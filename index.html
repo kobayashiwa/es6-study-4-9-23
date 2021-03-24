@@ -164,6 +164,20 @@
         }
         const vision = new Vision(14, "編集長", "今後");
         vision.info();
+
+        class Project {
+            constructor(thame, issue01, issue02, team) {
+                this.thame = thame;
+                this.issue01 = issue01;
+                this.issue02 = issue02;
+                this.team = team;
+            }
+            heading() {
+                console.log(`さて、${this.thame}は文面としては固まったものの、未だ机上、それを具現化するあゆみは軽やかとはいえません。${this.issue01}、${this.issue02}、意図しないかたちで届くことのないように一つひとつ確かめながら進んでいます。`);
+            }
+        }
+        const project = new Project("テーマ", "ジェンダー", "ルッキズム", "編集部");
+        project.heading();
     </script>
 
 </html>
